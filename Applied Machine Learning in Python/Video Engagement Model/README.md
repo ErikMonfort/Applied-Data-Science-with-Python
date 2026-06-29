@@ -7,9 +7,7 @@ The goal of the project is to build, evaluate, and compare machine learning mode
 
 ### Dataset
 
-The data used in this project is derived from the public VLE Dataset repository:
-
-'https://github.com/sahanbull/VLE-Dataset' by sahanbull
+The dataset used in this project is derived from the public [VLE Dataset](https://github.com/sahanbull/VLE-Dataset) by `sahanbull`.
 
 For this project:
 
@@ -46,7 +44,7 @@ The project includes:
 
 The best-performing model was a balanced Support Vector Machine using an RBF kernel. The model was selected using cross-validation and evaluated against a dummy baseline to confirm that it provided meaningful predictive value beyond class-frequency guessing.
 
-The final model achieved strong validation performance, with a satisfactory ROC AUC score.
+The final model achieved strong validation performance, with a validation ROC AUC of approximately 0.90.
 
 
 ### Visualizations
@@ -54,7 +52,8 @@ The final model achieved strong validation performance, with a satisfactory ROC 
 Below are the visualizations from the project:
 
 1. *Feature Importance Check with a Decision Tree*
-   (ID included here out of curiosity as to whether the model was able to derive useful information from it)
+   (ID included in this diagnostic check out of curiosity to assess whether it appeared to carry predictive information.
+   It is then removed)
 <img width="990" height="539" alt="image" src="https://github.com/user-attachments/assets/3cb1286e-ed07-418f-b435-786528434eb9" />
 
 
@@ -85,3 +84,10 @@ Below are the visualizations from the project:
 * The precision-recall trade-off has practical implications. A higher-recall model reduces the chance of missing genuinely high-engagement videos, which may benefit content creators, but it may also increase false positives and surface some lower-quality recommendations to learners.
 * In a production setting, the decision threshold should be chosen based on business priorities. If the goal is content discovery, higher recall may be preferred; if the goal is learner experience and recommendation quality, higher precision may be more important.
 
+### How to Run
+1. Clone the repository.
+2. Install the dependencies: pip install -r requirements.txt
+3. Open video_engagement_prediction.ipynb in Jupyter Notebook or JupyterLab.
+4. Run the notebook cells from top to bottom.
+
+The notebook is committed with outputs visible, so the main results and visualisations can be reviewed directly on GitHub without rerunning the code.
