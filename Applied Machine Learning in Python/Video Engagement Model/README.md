@@ -48,36 +48,34 @@ The best-performing model was a balanced Support Vector Machine using an RBF ker
 
 The final model achieved strong validation performance, with a satisfactory ROC AUC score.
 
+
 ### Visualizations
 
 Below are the visualizations from the project:
 
 1. Feature Importance Check with a Decision Tree (ID included here out of curiosity as to whether the model was able to derive useful information from it)
-
-
+<img width="990" height="539" alt="image" src="https://github.com/user-attachments/assets/3cb1286e-ed07-418f-b435-786528434eb9" />
 
 2. Confusion Matrix - Balanced SVM
-
-
+<img width="539" height="449" alt="image" src="https://github.com/user-attachments/assets/dfecdcf9-a403-4ea5-b878-77bb5065cc95" />
 
 3. ROC Curve - Balanced SVM
-
-
+<img width="444" height="452" alt="image" src="https://github.com/user-attachments/assets/27fe5b6a-4492-4a4b-a2a9-9d0c10b8b08c" />
 
 4. Precision-Recall Curve - Balanced SVM
-
+<img width="445" height="451" alt="image" src="https://github.com/user-attachments/assets/151f4d16-fd99-4bdd-8655-bc5c4985d07d" />
 
 
 ### Outcome
 
-####Technical / Project Takeaways
+#### Technical / Project Takeaways
 * The target distribution is imbalanced, so accuracy alone is not sufficient for evaluating model quality. Metrics such as ROC AUC, precision, recall, F1 score, and confusion matrices provide a more complete view of performance.
 * A dummy classifier provides an important baseline, helping confirm whether the supervised models are learning useful patterns rather than simply reflecting the majority class.
 * Pipelines ensure that preprocessing steps such as scaling are applied safely during cross-validation, reducing the risk of data leakage.
 * The Balanced SVM performed best in validation based on ROC AUC, showing stronger ranking performance than both the dummy baseline and Logistic Regression model.
 * ROC AUC was useful as the main selection metric because it evaluates how well the model ranks high-engagement videos above lower-engagement videos across different thresholds.
 
-####Business / Product Takeaways
+#### Business / Product Takeaways
 * The final model outputs probability scores for unseen videos, which could be used to rank or prioritise content by predicted engagement.
 * For a learning platform, this type of model could help identify videos that are likely to perform well, support content recommendation, or highlight promising educational material for further promotion.
 * The precision-recall trade-off has practical implications. A higher-recall model reduces the chance of missing genuinely high-engagement videos, which may benefit content creators, but it may also increase false positives and surface some lower-quality recommendations to learners.
