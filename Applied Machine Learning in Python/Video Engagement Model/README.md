@@ -1,6 +1,8 @@
 ## Predicting Educational Video Engagement with Machine Learning
 ### Project Overview
 
+Notebook: (https://github.com/ErikMonfort/Applied-Data-Science-with-Python/blob/main/Applied%20Machine%20Learning%20in%20Python/Video%20Engagement%20Model/video_engagement_prediction.ipynb)
+
 This project uses supervised machine learning to predict whether an educational video is likely to generate high learner engagement. The work is based on a tabular dataset derived from the public VLE Dataset, which contains video-level features related to educational content.
 
 The goal of the project is to build, evaluate, and compare machine learning models for a binary classification task, with particular attention to model evaluation and ROC AUC performance.
