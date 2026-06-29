@@ -20,14 +20,22 @@ The target variable is engagement, representing whether a video achieved high en
 
 ### Project Structure
 
-project/< br / >
-   ├── data/< br / >
-   │   ├── train.csv< br / >
-   │   └── test.csv< br / >
-   ├── notebook/< br / >
-   │   └── video_engagement_prediction.ipynb< br / >
-   ├── README.md< br / >
-   └── requirements.txt< br / >
+project/  
+
+   ├── data/  
+   
+   │   ├── train.csv  
+   
+   │   └── test.csv  
+   
+   ├── notebook/  
+   
+   │   └── video_engagement_prediction.ipynb  
+   
+   ├── README.md  
+   
+   └── requirements.txt  
+   
 
 ### Methods Used
 The project includes:
