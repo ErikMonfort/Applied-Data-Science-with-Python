@@ -56,11 +56,14 @@ Below are the visualizations from the project:
 1. Feature Importance Check with a Decision Tree (ID included here out of curiosity as to whether the model was able to derive useful information from it)
 <img width="990" height="539" alt="image" src="https://github.com/user-attachments/assets/3cb1286e-ed07-418f-b435-786528434eb9" />
 
+
 2. Confusion Matrix - Balanced SVM
 <img width="539" height="449" alt="image" src="https://github.com/user-attachments/assets/dfecdcf9-a403-4ea5-b878-77bb5065cc95" />
 
+
 3. ROC Curve - Balanced SVM
 <img width="444" height="452" alt="image" src="https://github.com/user-attachments/assets/27fe5b6a-4492-4a4b-a2a9-9d0c10b8b08c" />
+
 
 4. Precision-Recall Curve - Balanced SVM
 <img width="445" height="451" alt="image" src="https://github.com/user-attachments/assets/151f4d16-fd99-4bdd-8655-bc5c4985d07d" />
