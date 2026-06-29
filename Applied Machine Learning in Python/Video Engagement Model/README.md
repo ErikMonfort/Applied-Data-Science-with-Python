@@ -9,7 +9,7 @@ The goal of the project is to build, evaluate, and compare machine learning mode
 
 The data used in this project is derived from the public VLE Dataset repository:
 
-https://github.com/sahanbull/VLE-Dataset
+'https://github.com/sahanbull/VLE-Dataset' by sahanbull
 
 For this project:
 
@@ -48,9 +48,38 @@ The best-performing model was a balanced Support Vector Machine using an RBF ker
 
 The final model achieved strong validation performance, with a satisfactory ROC AUC score.
 
-### How to Run
+### Visualizations
 
-If you are interested in testing the model:
-COMPLETE
+Below are the visualizations from the project:
+
+1. Feature Importance Check with a Decision Tree (ID included here out of curiosity as to whether the model was able to derive useful information from it)
+
+
+
+2. Confusion Matrix - Balanced SVM
+
+
+
+3. ROC Curve - Balanced SVM
+
+
+
+4. Precision-Recall Curve - Balanced SVM
+
+
 
 ### Outcome
+
+####Technical / Project Takeaways
+* The target distribution is imbalanced, so accuracy alone is not sufficient for evaluating model quality. Metrics such as ROC AUC, precision, recall, F1 score, and confusion matrices provide a more complete view of performance.
+* A dummy classifier provides an important baseline, helping confirm whether the supervised models are learning useful patterns rather than simply reflecting the majority class.
+* Pipelines ensure that preprocessing steps such as scaling are applied safely during cross-validation, reducing the risk of data leakage.
+* The Balanced SVM performed best in validation based on ROC AUC, showing stronger ranking performance than both the dummy baseline and Logistic Regression model.
+* ROC AUC was useful as the main selection metric because it evaluates how well the model ranks high-engagement videos above lower-engagement videos across different thresholds.
+
+####Business / Product Takeaways
+* The final model outputs probability scores for unseen videos, which could be used to rank or prioritise content by predicted engagement.
+* For a learning platform, this type of model could help identify videos that are likely to perform well, support content recommendation, or highlight promising educational material for further promotion.
+* The precision-recall trade-off has practical implications. A higher-recall model reduces the chance of missing genuinely high-engagement videos, which may benefit content creators, but it may also increase false positives and surface some lower-quality recommendations to learners.
+* In a production setting, the decision threshold should be chosen based on business priorities. If the goal is content discovery, higher recall may be preferred; if the goal is learner experience and recommendation quality, higher precision may be more important.
+
