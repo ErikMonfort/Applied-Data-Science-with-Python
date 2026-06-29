@@ -24,8 +24,7 @@ project/
    ├── data/     
    │   ├── train.csv  
    │   └── test.csv  
-   ├── notebook/  
-   │   └── video_engagement_prediction.ipynb  
+   ├── video_engagement_prediction.ipynb  
    ├── README.md  
    └── requirements.txt    
 
