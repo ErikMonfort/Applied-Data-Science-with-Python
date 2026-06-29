@@ -46,7 +46,7 @@ The project includes:
 
 The best-performing model was a balanced Support Vector Machine using an RBF kernel. The model was selected using cross-validation and evaluated against a dummy baseline to confirm that it provided meaningful predictive value beyond class-frequency guessing.
 
-The final model achieved strong validation performance, with a validation ROC AUC of approximately 0.90.
+The final model achieved strong validation performance, with a validation ROC AUC of 0.90.
 
 
 ### Visualizations
